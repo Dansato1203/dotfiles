@@ -1,0 +1,41 @@
+[[plugins]]
+repo = 'w0ng/vim-hybrid'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['vim-airline/vim-airline-themes', 'tpope/vim-fugitive']
+hook_add = '''
+	let g:airline#extensions#tabline#enabled=1
+	let g:airline#extensions#branch#enabled=1
+	let g:airline_powerline_fonts=1
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+hook_add = '''
+	let g:airline_theme = 'bubblegum'
+'''
+
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+
+#[[plugins]]
+#repo = 'itchyny/lightline.vim'
+#hook_add = '''
+#	let g:lightline = { 
+#	\ 'colorscheme': 'One' ,
+#	\ 'active': {
+#	\   'left': [ [ 'mode', 'paste' ],
+#	\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+#	\ },
+#	\ 'component_function': {
+#	\   'gitbranch': 'fugitive#head'
+#	\ },
+#	\ }
+#	set background=dark
+#	set laststatus=2
+#	set noshowmode
+#'''
