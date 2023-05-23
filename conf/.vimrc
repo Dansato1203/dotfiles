@@ -73,6 +73,8 @@ set ignorecase
 
 set title
 
+set backspace=indent,eol,start
+
 augroup my_python_settings
 	autocmd!
 	autocmd Filetype python setlocal noexpandtab tabstop=4
